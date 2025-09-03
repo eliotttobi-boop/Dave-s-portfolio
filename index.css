@@ -1,0 +1,189 @@
+body{
+    background: #000;
+    background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 35%, rgba(0, 0, 0, 1) 100%);
+    font-family: calibri;
+}
+.dist{
+    color: antiquewhite;
+    font-size: 50px;
+    margin-left: 30px;
+}
+.email{
+  color: gray;
+  float: right;
+  margin-top: -73px;
+  margin-right: 30px;
+  font-size: 24px;
+}
+h3{
+    color: grey;
+    margin-left: 30px;
+    margin-top: -37px;
+}
+
+.btn2 {
+ --color: #000a90;
+ --color2: rgb(10, 25, 30);
+ padding: 0.8em 1.75em;
+ background-color: transparent;
+ border-radius: 6px;
+ border: .3px solid var(--color);
+ transition: .5s;
+ position: relative;
+ overflow: hidden;
+ cursor: pointer;
+ margin-left: 35px;
+ z-index: 1;
+ font-weight: 300;
+ font-size: 17px;
+ font-family: 'Roboto', 'Segoe UI', sans-serif;
+ text-transform: uppercase;
+ color: var(--color);
+}
+
+.btn2::after, .btn::before {
+ content: '';
+ display: block;
+ height: 100%;
+ width: 100%;
+ transform: skew(90deg) translate(-50%, -50%);
+ position: absolute;
+ inset: 50%;
+ left: 25%;
+ z-index: -1;
+ transition: .5s ease-out;
+ background-color: rgb(1, 1, 107);
+}
+
+.btn2::before {
+ top: -50%;
+ left: -25%;
+ transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn2:hover::before {
+ transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn2:hover::after {
+ transform: skew(45deg) translate(-50%, -50%);
+}
+
+.btn2:hover {
+ color: var(--color2);
+}
+
+.btn2:active {
+ filter: brightness(.7);
+ transform: scale(.98);
+}
+
+.exp h1{
+    color: antiquewhite;
+    margin-left: 30px;
+    font-size: 70px;
+    padding: 0;
+    text-shadow: 1px 1px 4px white;
+}
+#p{
+    color: antiquewhite;
+    padding-left: 30px;
+    font-size: 25px;
+    margin-top: -40px;
+    width: 800px;
+}
+#card {
+ width: 390px;
+ height: 354px;
+ background: white;
+ border-radius: 10px;
+ float: right;
+ margin-right: 30px;
+ margin-top: -210px;
+ transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+ box-shadow: inset 0 -3em 3em rgba(255, 255, 255, 0.678),
+             0 0  0 2px rgb(190, 190, 190),
+             0.3em 0.3em 1em rgba(255, 255, 255, 0.3);
+}
+#card ul{
+    font-size: 57px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: -30px;
+}
+#card li{
+    font-size: 38px;
+    font-weight: bold;
+    margin-top: -30px;
+    line-height: 90px;
+    color: grey;
+}
+#button2 {
+  display: inline-block;
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  color: #090909;
+  padding: 0.7em 1.7em;
+  margin-top: 70px;
+  margin-left: 30px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  box-shadow: 3px 3px 4px #c5c5c5, -2px -2px 6px #ffffff;
+}
+
+#button2:active {
+  color: #666;
+  box-shadow: inset 2px 2px 8px #c5c5c5, inset -2px -2px 8px #ffffff;
+}
+
+#button2:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+#button2:after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  background-color: #000a90;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+#button2:hover {
+  color: #ffffff;
+  border: 1px solid #000000;
+}
+
+#button2:hover:before {
+  top: -35%;
+  background-color: #000000;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+#button2:hover:after {
+  top: -45%;
+  background-color: #000000;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
