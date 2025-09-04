@@ -324,7 +324,9 @@ button {
 }
 .p {
     color: grey;
-    text-align: center;
+    float: left;
+    margin-left: 22px;
+    margin-top: -30px;
     font-size: 26px;
 }
 .section{
@@ -340,6 +342,10 @@ button {
   box-shadow: 5px 5px 10px grey;
   border-radius: 5px;
   height: 90px;
+}
+.section h3:hover{
+  box-shadow: 6px 6px 20px grey;
+  transition: 2s;
 }
 .section li{
   margin-left: 32px;
