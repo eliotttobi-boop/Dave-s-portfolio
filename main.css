@@ -1,6 +1,7 @@
 body{
     background: #FFFDD0;
     background: linear-gradient(211deg,rgba(255, 253, 208, 1) 0%, rgba(255, 253, 208, 1) 100%);
+    margin-top: 190px;
 }
 #button2 {
   display: inline-block;
@@ -10,7 +11,7 @@ body{
   z-index: 1;
   color: #090909;
   padding: 0.7em 1.7em;
-  margin-top: 20px;
+  margin-top: -20px;
   margin-left: 80px;
   cursor: pointer;
   font-size: 18px;
@@ -74,7 +75,7 @@ body{
 .contain h1{
     font-size: 70px;
     font-family: calibri;
-    margin-top: 174px;
+    margin-top: 234px;
     margin-left: 80px;
 }
 #button {
@@ -230,6 +231,7 @@ body{
     font-family: calibri;
     border-radius: 13px;
     box-shadow: -1px -3px 30px grey;
+    outline: 2px solid black;
 }
 .main h1{
     color: white;
